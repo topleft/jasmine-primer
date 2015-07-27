@@ -41,3 +41,14 @@ describe("Find Leap Year", function(){
   });
 
 });
+
+
+describe ("Change to upper", function () {
+  it ("returns strings in an array in all uppercase.", function() {
+    expect(code.arrayToUpper(["bob", "joe", "jamal"])).toEqual(["BOB", "JOE", "JAMAL"]);
+  });
+
+});
+
+
+

@@ -23,10 +23,22 @@ exports.calculate = function (amt){
 };
 
 exports.findLeap = function (year){
-  if (year %4 === 0 && year %100 === 0){
+  if (year % 4 === 0 && year %100 === 0){
     return false;
   }
   else if (year % 4 === 0) {
     return true;
   }
+
 };
+
+exports.arrayToUpper = function (arr){
+  var copy = [];
+  for (var i = 0; i < arr.length; i++) {
+    var up = arr[i].toUpperCase();
+    copy.push(up);
+  };
+  return copy;
+};
+
+
