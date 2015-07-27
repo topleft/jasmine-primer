@@ -52,3 +52,10 @@ describe ("Change to upper", function () {
 
 
 
+describe("Find greatest strength", function (){
+  var arr = [{strength : 20, name : "Jefe"}, {strength : 10, name : "Al"}];
+
+  it ("return object with greatest strength property.", function (){
+    expect(code.greatestStrength(arr)).toEqual({strength : 20, name : "Jefe"});
+  });
+});

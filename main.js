@@ -41,4 +41,16 @@ exports.arrayToUpper = function (arr){
   return copy;
 };
 
+exports.greatestStrength = function (arr) {
+  var greatest = 0;
+  var result;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].strength > greatest){
+      greatest = arr[i].strength;
+      result = arr[i];
+    }
+  }
+  return result;
+}
+
 
