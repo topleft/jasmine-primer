@@ -4,7 +4,6 @@ exports.outputHelloWorld = function () {
 
 exports.calculate = function (amt){
 
-
   if (amt > 30) {
     var d = (amt - 30)*0.03;
     return d+2.2;
@@ -21,4 +20,13 @@ exports.calculate = function (amt){
     return amt*0.10;
   }
 
+};
+
+exports.findLeap = function (year){
+  if (year %4 === 0 && year %100 === 0){
+    return false;
+  }
+  else if (year % 4 === 0) {
+    return true;
+  }
 };

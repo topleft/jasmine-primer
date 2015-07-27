@@ -26,6 +26,18 @@ describe('Tax Calculator', function(){
     expect(code.calculate(40)).toEqual(2.50);
   });
 
+});
 
+describe("Find Leap Year", function(){
+
+  it ("returns true if given year is divisible by 4.", function (){
+    expect(code.findLeap(2004)).toBe(true);
+    expect(code.findLeap(1248)).toBe(true);
+  });
+
+  it ("returns false if given year divible by 100 and 4.", function (){
+    expect(code.findLeap(2000)).toBe(false);
+    expect(code.findLeap(1600)).toBe(false);
+  });
 
 });
